@@ -5,21 +5,27 @@ namespace ClienteBackEnd.Repositories;
 
 public class ClienteRepository
 {
-    public List<Cliente> ObtenerTodos() => ClienteData.Lista;
+    private readonly ClienteData dataCliente;
 
-    public Cliente? ObtenerPorId(int id) => ClienteData.Lista.FirstOrDefault(c => c.Id == id);
+    public ClienteRepository(ClienteData data)
+    {
+        dataCliente = data;
+    }
+    public List<Cliente> ObtenerTodos() => dataCliente.Lista;
+
+    public Cliente? ObtenerPorId(int id) => dataCliente.Lista.FirstOrDefault(c => c.Id == id);
 
     public void Agregar(Cliente cliente)
     {
-        if (ClienteData.Lista.Count == 0)
+        if (dataCliente.Lista.Count == 0)
         {
             cliente.Id = 1;
         }
         else
         {
-            cliente.Id = ClienteData.Lista.Max(c => c.Id) + 1;
+            cliente.Id = dataCliente.Lista.Max(c => c.Id) + 1;
         }
-        ClienteData.Lista.Add(cliente);
+        dataCliente.Lista.Add(cliente);
     }
 
     public bool Actualizar(int id, Cliente actualizado)
@@ -38,7 +44,7 @@ public class ClienteRepository
         var cliente = ObtenerPorId(id);
         if (cliente == null) return false;
 
-        ClienteData.Lista.Remove(cliente);
+        dataCliente.Lista.Remove(cliente);
         return true;
     }
 }

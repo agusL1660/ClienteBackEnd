@@ -31,3 +31,4 @@ D:\Proyectos\Naaloo\clientebackend\obj\Debug\net8.0\refint\ClienteBackEnd.dll
 D:\Proyectos\Naaloo\clientebackend\obj\Debug\net8.0\ClienteBackEnd.pdb
 D:\Proyectos\Naaloo\clientebackend\obj\Debug\net8.0\ClienteBackEnd.genruntimeconfig.cache
 D:\Proyectos\Naaloo\clientebackend\obj\Debug\net8.0\ref\ClienteBackEnd.dll
+D:\Proyectos\Naaloo\ClienteBackEnd\obj\Debug\net8.0\ClienteBackEnd.sourcelink.json

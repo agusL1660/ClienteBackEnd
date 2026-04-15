@@ -1,6 +1,11 @@
 using ClienteBackend.Middleware;
+using ClienteBackEnd.Data;
 using ClienteBackEnd.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddSingleton<ClienteData>();
+builder.Services.AddScoped<ClienteRepository>();
 
 builder.Services.AddControllers();
 // Add services to the container.
@@ -9,7 +14,6 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
-builder.Services.AddScoped<ClienteRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

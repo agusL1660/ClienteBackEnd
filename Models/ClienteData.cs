@@ -2,9 +2,9 @@ using ClienteBackend.Models;
 
 namespace ClienteBackEnd.Data;
 
-public static class ClienteData
+public class ClienteData
 {
-    public static List<Cliente> Lista = new List<Cliente>
+    public List<Cliente> Lista = new List<Cliente>
     {
         new Cliente { 
             Id = 1, 
