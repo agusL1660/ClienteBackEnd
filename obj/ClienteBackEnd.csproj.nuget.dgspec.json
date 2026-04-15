@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Proyectos\\Naaloo\\ClienteBackEnd\\ClienteBackEnd.csproj": {}
+    "D:\\Proyectos\\Naaloo\\ClienteBackend\\ClienteBackEnd.csproj": {}
   },
   "projects": {
-    "D:\\Proyectos\\Naaloo\\ClienteBackEnd\\ClienteBackEnd.csproj": {
+    "D:\\Proyectos\\Naaloo\\ClienteBackend\\ClienteBackEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Proyectos\\Naaloo\\ClienteBackEnd\\ClienteBackEnd.csproj",
+        "projectUniqueName": "D:\\Proyectos\\Naaloo\\ClienteBackend\\ClienteBackEnd.csproj",
         "projectName": "ClienteBackEnd",
-        "projectPath": "D:\\Proyectos\\Naaloo\\ClienteBackEnd\\ClienteBackEnd.csproj",
+        "projectPath": "D:\\Proyectos\\Naaloo\\ClienteBackend\\ClienteBackEnd.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "D:\\Proyectos\\Naaloo\\ClienteBackEnd\\obj\\",
+        "outputPath": "D:\\Proyectos\\Naaloo\\ClienteBackend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"

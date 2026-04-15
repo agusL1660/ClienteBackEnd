@@ -7,8 +7,5 @@ public class Cliente
     public string Apellido { get; set; } = string.Empty;
     public string Direccion { get; set; } = string.Empty;
 
-    public static explicit operator ClienteDTO(Cliente c) 
-    {
-        return new ClienteDTO { Nombre = c.Nombre, Apellido = c.Apellido, Direccion = c.Direccion };
-    }
+    
 }
